@@ -1,0 +1,11 @@
+{{#with data}}
+    {{name}}
+{{/with}}
+{{#each data.people as |p|}}
+    {{#> childEntry}}
+    <h3>
+        {{p.firstname}}
+    </h3>    
+    {{/childEntry}}
+{{/each}}
+<h1>Welcome to India</h1>
